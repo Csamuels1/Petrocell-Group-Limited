@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://petrocell-group-limited.netlify.app/sitemap.xml
