@@ -17,7 +17,7 @@ describe('corporate site structure', () => {
   })
 
   it('uses the verified subsidiary routing rules', () => {
-    const oilLinks = [...document.querySelectorAll('a[href^="https://petrocell-oil-and-gas-limited.netlify.app"]')]
+    const oilLinks = [...document.querySelectorAll('a[href^="https://petrocell-energy-resources-limited.netlify.app"]')]
     expect(oilLinks.length).toBeGreaterThanOrEqual(3)
     oilLinks.forEach((link) => {
       expect(link.getAttribute('target')).toBe('_blank')
@@ -42,7 +42,7 @@ describe('corporate site structure', () => {
     const assets = [
       'public/assets/logo/petrocell-group-logo.png',
       'public/assets/logo/petrocell-group-icon.png',
-      'public/assets/logo/petrocell-oil-gas-logo.png',
+      'public/assets/logo/petrocell-energy-resources-logo.png',
       'public/assets/logo/petrocell-connect-logo.png',
       'public/assets/images/chimezie-ifeanyi-samuel.webp',
       'public/assets/social/petrocell-group-og.jpg',
@@ -54,6 +54,8 @@ describe('corporate site structure', () => {
     const copy = document.body.textContent.toLowerCase()
     expect(copy).not.toContain('placeholder')
     expect(copy).not.toContain('coming soon')
+    expect(copy).not.toContain(['petrocell', 'oil', 'and', 'gas', 'limited'].join(' '))
+    expect(copy).not.toContain(['petrocell', 'oil', '&', 'gas'].join(' '))
     expect(copy).not.toContain('© 2025')
   })
 })

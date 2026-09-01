@@ -34,7 +34,7 @@ The Group email is currently `group@petrocellgroup.com`. Search for that address
 
 ### Subsidiary Links
 
-- Petrocell Oil and Gas uses the verified production URL `https://petrocell-oil-and-gas-limited.netlify.app/`.
+- Petrocell Energy Resources Limited uses the verified production URL `https://petrocell-energy-resources-limited.netlify.app/`.
 - Petrocell Connect currently routes enquiries to the Group contact form. Once its official site is live, replace every `data-connect-link` destination with the verified HTTPS URL, add `target="_blank" rel="noopener"`, and update the routing test.
 
 ## Assets
